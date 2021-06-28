@@ -1,49 +1,18 @@
-/*function liquidificador(frutas){
-    alert(frutas) Função 
-}
-liquidificador('manga limão')*/
-
-/* Variaveis
-var nome = 'Ana'
-alert(nome)*/ 
-
-/*const nome = 'Amigo' Constantes
-alert(nome)*/
-
-
-/*          Objecto  
-
-const pessoa = {
-    name: 'Tomás',
-    age: 20,
-    falar: function () {
-        alert(pessoa.tomás)        
-    }
-}
-pessoa.falar()*/ 
-
-
-/*Abri e fecha o menu quando clicamos no Icon*/
-
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 console.log(toggle)
-
-
 
 for(const element of toggle){
     element.addEventListener('click', function(){
         nav.classList.toggle('show')     })
 }
 
-
 /* Quando clicar em um intem do menu, esconde o menu*/
 
 const links = document.querySelectorAll('nav ul li a')
 for(const link of links) {
     link.addEventListener('click', function(){
-        nav.classList.remove('show')
-    })
+        nav.classList.remove('show')    })
 } 
 /*Muda o header da página quando der scroll*/
 const header = document.querySelector('#header')
